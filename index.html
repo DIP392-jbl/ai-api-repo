@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>GoodnAIght</title>
-        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="src/style/style.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     </head>
@@ -12,8 +12,8 @@
                 <!-- Navigācijas josla kurā var staigāt pa jau saģenerētiem stāstiem vai atlasīt opciju izveidot jaunu. -->
                 <div id="newStorySection">
                     <!-- Šī opcija aizved uz jauna stāsta ģenerēšanu lapu. -->
-                    <a id="newStorySection_a" class="toolItem selected" href="index.html">
-                        <img src="img/plus.png" alt="plus.png">
+                    <a id="newStorySection_a" class="toolItem selected" href="#">
+                        <img src="src/img/plus.png" alt="plus.png">
                         <p>New story</p>
                     </a>
                 </div>
@@ -21,20 +21,20 @@
                 <!-- Tālāk apakšā atrodas visi stāsti, kas ir saglabāti (pašlaicīgi ir tikai, lai demonstrētu, kā tas varētu izskatīties), tas ir ja tiks izstrādāts veids kā glabāt tos. -->
                 <!-- Ja arī tiek implementēts veids kā tie tiks glabāti, tad vajadzēs šos 'div' tagus pārveidot par 'form' tagu, ja tiks izmantots backends -->
                  <div class="storyItem">
-                    <a id="story1" class="toolItem not-selected" href="story-view.html">
-                        <img src="img/file_on.png" alt="file_on.png">
+                    <a id="story1" class="toolItem not-selected" href="src/story-view.html">
+                        <img src="src/img/file_on.png" alt="file_on.png">
                         <p>Big chungus</p>
                     </a>
                 </div>
                 <div class="storyItem">
                     <a id="story2" class="toolItem not-selected" href="#">
-                        <img src="img/file_on.png" alt="file_on.png">
+                        <img src="src/img/file_on.png" alt="file_on.png">
                         <p>Mountins</p>
                     </a>
                 </div>
                 <div class="storyItem">
                     <a id="story3" class="toolItem not-selected" href="#">
-                        <img src="img/file_on.png" alt="file_on.png">
+                        <img src="src/img/file_on.png" alt="file_on.png">
                         <p>Amugus</p>
                     </a>
                 </div>
@@ -43,7 +43,7 @@
             <div id="toolbarButtonContainer">
                  <!-- Šī poga ir paredzēta tikai mobīlo ierīču pārlūkiem, datora versijā tā netiek uzrādīta. Tās mērķis ir atvērt navigācijas paneli. -->
                 <button id="toolbarButtonOpen" class="display" onclick="toggleToolbar()">
-                    <img src="img/box_list.png" alt="box_list.png">
+                    <img src="src/img/box_list.png" alt="box_list.png">
                 </button>
             </div>
             <div class="mainPanel">
@@ -70,5 +70,5 @@
             </div>
         </div>
     </body>
-    <script src="scripts/toolbar-transitions.js"></script>
+    <script src="src/scripts/toolbar-transitions.js"></script>
 </html>

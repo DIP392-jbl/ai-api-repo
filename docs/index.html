@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GoodnAIght</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <link rel="stylesheet" crossorigin href="/assets/index-CYVX-XIY.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="toolbarID" class="toolbarPanel slideHidden">
+                <!-- Navigācijas josla kurā var staigāt pa jau saģenerētiem stāstiem vai atlasīt opciju izveidot jaunu. -->
+                <div id="newStorySection">
+                    <!-- Šī opcija aizved uz jauna stāsta ģenerēšanu lapu. -->
+                    <a id="newStorySection_a" class="toolItem selected" href="#">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAExJREFUOI1jYMADNm7aemDjpq0H8KlhwidJDBg1gAoGMG7ctPXAf4b//7HK/mcwgKhiuIDLABaIPCMjdv0MjBB5BqzyBMFoQhoqBgAAgc8UWIw3kxMAAAAASUVORK5CYII=" alt="plus.png">
+                        <p>New story</p>
+                    </a>
+                </div>
+                <div id="seperator"></div><!-- Atdaloša josla starp stāsta izveides opciju un pašiem izveidotajiem stāstiem. -->
+                <!-- Tālāk apakšā atrodas visi stāsti, kas ir saglabāti (pašlaicīgi ir tikai, lai demonstrētu, kā tas varētu izskatīties), tas ir ja tiks izstrādāts veids kā glabāt tos. -->
+                <!-- Ja arī tiek implementēts veids kā tie tiks glabāti, tad vajadzēs šos 'div' tagus pārveidot par 'form' tagu, ja tiks izmantots backends -->
+                 <div class="storyItem">
+                    <a id="story1" class="toolItem not-selected" href="src/story-view.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARdJREFUSInt1cFNwzAUBuD/uT2RQzNCGYEN6BFV0HiDMAEZoZ0gYQLYwHGEz1ml3SA5NDfe44CQUJLWSeFSKf/R9vP3JEt+wLWH2gvGlCHNmhQiERGFfUUiUpGibPO43vmAeXtBqWMGAZiD20ivqr4ia90Wgm1euGX0tH4+B6hOd6CIOUj0ict/HXwlyF1euLdRABEW3su/U/FncO9DOsCIhFqvvMhFALN6FyC2xUeq5s0LgJKA2FqX/Qug9cNe+GZJwAEMglANwU6A2FtsCyeXoKdq//IGgzIBEzABfd+1oDam7B0052JMGYqg9gIEyWnWpGOQnylIkLy915lozEGi1DGDava2cIshgEhTk0jOHCRDm7qefAEkcXkZ9Eu89wAAAABJRU5ErkJggg==" alt="file_on.png">
+                        <p>Big chungus</p>
+                    </a>
+                </div>
+                <div class="storyItem">
+                    <a id="story2" class="toolItem not-selected" href="#">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARdJREFUSInt1cFNwzAUBuD/uT2RQzNCGYEN6BFV0HiDMAEZoZ0gYQLYwHGEz1ml3SA5NDfe44CQUJLWSeFSKf/R9vP3JEt+wLWH2gvGlCHNmhQiERGFfUUiUpGibPO43vmAeXtBqWMGAZiD20ivqr4ia90Wgm1euGX0tH4+B6hOd6CIOUj0ict/HXwlyF1euLdRABEW3su/U/FncO9DOsCIhFqvvMhFALN6FyC2xUeq5s0LgJKA2FqX/Qug9cNe+GZJwAEMglANwU6A2FtsCyeXoKdq//IGgzIBEzABfd+1oDam7B0052JMGYqg9gIEyWnWpGOQnylIkLy915lozEGi1DGDava2cIshgEhTk0jOHCRDm7qefAEkcXkZ9Eu89wAAAABJRU5ErkJggg==" alt="file_on.png">
+                        <p>Mountins</p>
+                    </a>
+                </div>
+                <div class="storyItem">
+                    <a id="story3" class="toolItem not-selected" href="#">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARdJREFUSInt1cFNwzAUBuD/uT2RQzNCGYEN6BFV0HiDMAEZoZ0gYQLYwHGEz1ml3SA5NDfe44CQUJLWSeFSKf/R9vP3JEt+wLWH2gvGlCHNmhQiERGFfUUiUpGibPO43vmAeXtBqWMGAZiD20ivqr4ia90Wgm1euGX0tH4+B6hOd6CIOUj0ict/HXwlyF1euLdRABEW3su/U/FncO9DOsCIhFqvvMhFALN6FyC2xUeq5s0LgJKA2FqX/Qug9cNe+GZJwAEMglANwU6A2FtsCyeXoKdq//IGgzIBEzABfd+1oDam7B0052JMGYqg9gIEyWnWpGOQnylIkLy915lozEGi1DGDava2cIshgEhTk0jOHCRDm7qefAEkcXkZ9Eu89wAAAABJRU5ErkJggg==" alt="file_on.png">
+                        <p>Amugus</p>
+                    </a>
+                </div>
+            </div>
+            <button id="filler" class="hidden" onclick="toggleToolbar()"></button><!-- Šī poga ir paredzēta tikai mobīlo ierīču pārlūkiem, datora versijā tā netiek uzrādīta. Tās mērķis ir dot veidu kā aizvērt navigācijas paneli -->
+            <div id="toolbarButtonContainer">
+                 <!-- Šī poga ir paredzēta tikai mobīlo ierīču pārlūkiem, datora versijā tā netiek uzrādīta. Tās mērķis ir atvērt navigācijas paneli. -->
+                <button id="toolbarButtonOpen" class="display" onclick="toggleToolbar()">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAAXNSR0IArs4c6QAAAnRJREFUeJztm+1t2zAQQF+L/K86QZ0Jokxgb1BngniDZoRs0HSCtBPE3qCZwPIETSeoO0HyQxZMBZF4VESKpO8BQmzoYF0O98UjBYqiKIqiKMrJUgD3wD/guefaAsuJdAxOgd0gr6/VJJqOxAeh3E/g2vi+A/ZvyJXAJ+P7OfA0TLU02HP0hNIiuzZkbzzr5Y2PQrnGC3ZAZZE17xfOGkXCmaP8W+HzXgrgwsPvdtGVBlq4GsYHvwlrmAq4tAlJQ8knIY0C9hwJxOExV4RL0nvqCmslBsOsD1dUuIaSxO2TrUQmUo95BObU//QD3SW7oN0I2kp78ixwWw48U1ebk2BFuwO2GSXpkJKulRpm1OWur+RVRJhMFUWZBNccA3We+dJzX7RIy4kF8AdZVfo+kY7BKXHvY+4n0XQkpKG0Br4ePv+lf1w5Nz5fknn3a3qCrXG7M2RvPevlDddF5CP2xJpF4o1h7DCjvfD0zS8EOxcxGKaiveXimxvgs00ohtFmaEQFJwaPKQm7a5nMaPOJCKuXayg1U7w+kp7DNEg9ZsOxwdtSN3xde9fmSYfs5zJDlgSiWM6BkjofSIxyN5GOozF07DDruV+RSferKMq7GbJ9MseeYzaDNUqQFfIDilsyafRsLHHvY7aTaDoS0lCqOJ502NC/qb/iOEa4IvPut/ECSX9ykqNNyWA7i+YuhrHDEvgW8Hk/EIR3DIZ5CPy8BYLcGsNocxfj82LwmAXCI6YjITrp5WoYH9P8PREeS5OG0v/DX9tpKl7dT7ZCDX0tp2vmUtJeCmT/Wk6B/GBiFi9yuVBQe47NQBUn9OqfoiiKoiiKkggv1Drek2QqvZYAAAAASUVORK5CYII=" alt="box_list.png">
+                </button>
+            </div>
+            <div class="mainPanel">
+                <div id="createStoryPromt">
+                    <!-- Stāsta izveides panelis -->
+                    <h1>GoodnAIght</h1>
+                    <h3>Create a bedtime story the easy way</h3>
+                    <div id="inputStoryTheme" class="inputBox_small">
+                        <p>Story theme:</p>
+                        <input placeholder="Wizards..." type="text">
+                    </div>
+                    <div id="inputStoryCharecters" class="inputBox_small">
+                        <p>Main character/-s:</p>
+                        <input placeholder="Olaf, Bob, Carl..." type="text">
+                    </div>
+                    <div id="inputStoryDesc" class="inputBox_large">
+                        <p>Story description:</p>
+                        <textarea placeholder="Plot points etc..."></textarea>
+                    </div>
+                    <div id="createStoryForm">
+                        <button id="createStoryButton" class="button_large">Create story</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="src/scripts/toolbar-transitions.js"></script>
+</html>
