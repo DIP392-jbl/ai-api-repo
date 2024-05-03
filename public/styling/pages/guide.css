@@ -1,0 +1,71 @@
+#guide {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin: unset;
+    margin-bottom: 30px;
+  }
+
+  #guide-container {
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+  }
+
+  .dropdownable {
+    display: inline-flex;
+
+    h2 {
+      margin: unset;
+      line-height: 30px;
+
+      .guide-nr {
+        margin-right: 5px;
+        color: silver;
+      }
+    }
+      
+    button.dropdown-button {
+      border: none;
+      background-color: transparent;
+      height: 30px; /* Increased height of the button */
+      width: 60px; /* Increased width of the button */
+      cursor: crosshair;
+      background-image: url('/media/svg/arrow_down.svg');
+      background-size: 25px; /* Fixed size for the SVG */
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0;
+    }
+  }
+
+  .guide-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .dropdown-button {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .dropdownable.expanded .dropdown-button {
+    transform: rotate(-180deg);
+  }
+  
+  .guide-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding: 0 20px;  /* Assuming padding is desired */
+  }
+  
+  .dropdownable.expanded .guide-content {
+    max-height: 1000px; /* Adjust based on your content size */
+    padding: 20px;  /* Add padding when expanded */
+  }
+}

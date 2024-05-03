@@ -1,0 +1,66 @@
+<div class="center-credentials">
+  <section id="login-section">
+    <div class="container">
+      <h2>Sign in</h2>
+      <div id="login-form" class="credentials-form">
+        <div id="login-username-container">
+          <input type="text" id="login-username" placeholder="username or email" data-original-placeholder="username or email">
+        </div>
+        <div id="login-password-container" class="password-container">
+          <input type="password" id="login-password" placeholder="password" class="password-input" data-original-placeholder="password">
+          <button type="button" id="login-show-hide" class="toggle-password">show</button>
+        </div>
+        <div id="remember-credentials-container" class="inline checkbox">
+          <input type="checkbox" id="remember-credentials">
+          <label for="remember-credentials">Remember me</label><br>
+        </div>
+        <button type="button" id="login-button">Login</button>
+      </div>
+    </div>
+    <span class="offer inline">Don't have and account?
+      <a type="button" id="show-register-form" tabindex="0" role="button">Register new account</a>
+    </span>
+    <span class="offer">
+      <a type="button" id="show-forgot-password-form" tabindex="0" role="button">Forgot password?</a>
+    </span>
+  </section>
+  <section id="register-section" style="display:none;">
+    <div class="container">
+      <h2>Register</h2>
+      <div id="register-form" class="credentials-form">
+        <div id="register-username-container">
+          <input type="text" id="register-username" placeholder="username" autocomplete="off" data-original-placeholder="username">
+        </div>
+        <div id="register-email-container">
+          <input type="email" id="register-email" placeholder="email" data-original-placeholder="email">
+        </div>
+        <div id="register-password-container" class="password-container">
+          <input type="password" id="register-password" placeholder="password" class="password-input" data-original-placeholder="password">
+          <button type="button" id="register-show-hide" class="toggle-password">show</button>
+        </div>
+        <div id="police-consent-container" class="inline checkbox">
+          <input type="checkbox" id="police-consent">
+          <label for="police-consent"> I agree to police</label><br>
+        </div>
+        <button type="button" id="register-button" data-original-text="Register">Register</button>
+      </div>
+    </div>
+    <span class="offer">
+      <a type="button" id="show-login-form" tabindex="0" role="button">Back to sign in</a>
+    </span>
+  </section>
+  <section id="password-reset-section" style="display:none;">
+    <div class="container">
+      <h2>Reset password</h2>
+      <div id="password-reset-form" class="credentials-form">
+        <div id="reset-email-container">
+          <input type="email" id="reset-email" placeholder="your email" data-original-placeholder="your email">
+        </div>
+        <button type="button" id="send-reset-email" class="action-button">Send</button>
+      </div>
+    </div>
+    <span class="offer">
+      <a type="button" id="back-to-login" tabindex="0" role="button">Back to sign in</a>
+    </span>
+  </section>
+</div>

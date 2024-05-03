@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --accent-color: #7F00FF;
+  --font: 'Outfit', sans-serif;
+  --header-height: 120px;
+  --footer-height: 70px;
+  --content-heigth: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  font-weight: 400;
+  
+}
+
+main#content {
+  padding-top: var(--header-height);
+  padding-bottom: var(--footer-height);
+  height: var(--content-heigth);
+  align-content: center;
+  margin: 0px 15px;
+
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  cursor: default;
+
+  a {
+    cursor: crosshair;
+  }
+}
+
+/* Default state with caret visible */
+input, textarea, select {
+  caret-color: white;
+}
+
+/* Default text color before and during autofill selection */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: gray;
+  -webkit-box-shadow: 0 0 0px 1000px black inset;
+}
+
+/* Text color after autofill and caret reappears */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: white;
+}
+
+.has-error {
+  input {
+    border-color: red !important;
+    color: red !important;
+
+    &::placeholder {
+      color: red !important;
+    }
+  }
+
+  button {
+    color: red !important;
+  }
+
+  label {
+    color: red !important;
+
+    &::before {
+      border-color: red !important;
+    }
+  }
+}
+
+button.has-success {
+  background-color: greenyellow !important;
+  border-color: greenyellow !important;
+}
+
+a {
+  color: silver;
+
+  &:hover {
+    color: white;
+  }
+}

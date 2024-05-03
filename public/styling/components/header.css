@@ -1,0 +1,56 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: black;
+  z-index: 1000;
+
+  a {
+    font-size: 24px;
+    font-weight: 500;
+    cursor: crosshair;
+  }
+
+  .container {
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+    line-height: 30px;
+
+    .left,
+    .right {
+      height: 100%;
+      align-self: center;
+
+      a {
+        line-height: 30px;
+      }
+    }
+  }  
+  
+  .left,
+  .center,
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left {
+    justify-content: flex-start;
+  }
+
+  .center {
+    justify-content: center;
+
+    .logo-svg {
+      height: 80px;
+      width: auto;
+    }
+  }
+
+  .right {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,149 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .home-container {
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    margin-left: 200px;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  #product {
+    display: grid;
+    gap: 20px;
+  }
+
+  #theme-container,
+  #characters-container,
+  #description-container,
+  #title-container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    margin-top: 25px;
+
+    input {
+      font: var(--font);
+      font-size: 18px;
+      padding: 10px 15px;
+      color: white;
+      background: unset;
+      border: 2px solid white;
+      border-radius: 6px;
+      outline: unset;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  textarea#description {
+    font: var(--font);
+    font-size: 18px;
+    height: 200px;
+    padding: 10px 15px;
+    color: white;
+    background: unset;
+    border: 2px solid white;
+    border-radius: 6px;
+    outline: unset;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none; /* Disables resizing the textarea */
+    overflow: auto; /* Enables scrollbar when content overflows */
+  
+    /* Styling the scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent; /* scrollbar thumb and track colors */
+  }
+  
+  /* Custom scrollbar for WebKit browsers */
+  textarea#description::-webkit-scrollbar {
+    width: 8px; /* scrollbar width */
+  }
+  
+  textarea#description::-webkit-scrollbar-track {
+    background: transparent; /* scrollbar track color */
+  }
+  
+  textarea#description::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 4px;
+    border: 2px solid transparent; /* creates padding around the thumb */
+  }
+
+  #story-submit-container {
+    text-align: center;
+  }
+
+  button#story-submit {
+    font: var(--font);
+    padding: 10px 50px;
+    background-color: var(--accent-color);
+    color: black;
+    border-color: var(--accent-color);
+    border-radius: 5px;
+    cursor: crosshair;
+    font-weight: 550;
+    margin-top: 25px;
+
+    &.custom-success {
+      background-color: #D8FF00 !important;
+      border-color: #D8FF00 !important;
+    }
+  }
+
+  .has-error button#story-submit {
+    color: black !important;
+    background-color: red !important;
+    border-color: red !important;
+  }
+
+  .sidebar-container {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    align-content: center;
+
+    h3 {
+      margin: unset;
+      margin-bottom: 15px;
+      padding-left: 10px;
+    }
+    
+    .left-sidebar {
+      padding-left: 10px;
+
+      a {
+        color: silver;
+        display: block;
+        padding-left: 5px;
+        text-decoration: none;
+
+        &:hover {
+          color: white;
+        }
+
+        &.active-link {
+          color: white;
+        }
+
+        &:not(:last-child, :has(h3)) {
+          border-bottom: 1px solid silver;
+        }
+      }
+    }
+  }
+
+  #story-view-container {
+    display: none;
+  }
+}

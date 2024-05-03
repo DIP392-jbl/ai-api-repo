@@ -1,5 +1,5 @@
 {
-  "name": "cool-app",
+  "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.1.4"
+    "vite": "^5.2.9"
   },
   "dependencies": {
-    "openai": "^4.37.1"
+    "firebase": "^10.11.0"
   }
 }

@@ -1,0 +1,151 @@
+.center-credentials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*height: calc(var(--content-heigth) - 20px);*/
+
+  margin: 10px;
+
+  #login-section,
+  #register-section,
+  #password-reset-section {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .container {
+    border: 1.5px solid white;
+    padding: 0px 15px 15px 15px;
+
+    h2 {
+      cursor: default;
+    }
+  }
+
+  section  {
+    .credentials-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input {
+        font: var(--font);
+        padding: 10px;
+        color: white;
+        background: unset;
+        border: 1px solid white;
+        border-radius: 6px;
+        outline: unset;
+      }
+
+      #login-username-container,
+      #register-username-container,
+      #register-email-container,
+      #reset-email-container {
+        display: flex;
+        width: 100%;
+
+        input {
+          width: 100%;
+        }
+      }
+
+      input[type="checkbox"]{
+        margin: 0px 10px 0px 0px;
+      }
+
+      button {
+        font: var(--font);
+        padding: 10px;
+        background-color: var(--accent-color);
+        color: black;
+        border-color: var(--accent-color);
+        border-radius: 5px;
+        cursor: crosshair;
+        font-weight: 550;
+
+        &.custom-welcome {
+          background-color: aquamarine !important;
+          border-color: aquamarine !important;
+        }
+
+        &.custom-success {
+          background-color: #D8FF00 !important;
+          border-color: #D8FF00 !important;
+        }
+      }
+    }
+
+    .offer {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      cursor: default;
+
+      a {
+        cursor: crosshair;
+        white-space: nowrap;
+        display: inline-block;
+        color: var(--accent-color);
+        text-decoration-line: underline;
+        text-align: center;
+      }
+    }
+
+    .offer.inline {
+      a {
+        display: inline-block;
+      }
+    }
+
+    .inline.checkbox {
+      input[type="checkbox"] {
+        visibility: hidden;
+        position: absolute;
+      }
+
+      label {
+        position: relative;
+        padding-left: 30px;
+        cursor: crosshair;
+      }
+
+      label::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px solid white;
+        box-sizing: border-box;
+        transition: background-color 0.2s;
+      }
+
+      input[type="checkbox"]:checked + label::before {
+        background-color: var(--accent-color);
+      }
+    }
+    
+    .password-container {
+      position: relative;
+
+      .password-input {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      .toggle-password {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        border: none;
+        color: gray;
+        background-color: transparent !important;
+        font-weight: 420 !important;
+        padding-left: 5px;
+      }
+    }
+  }
+}
